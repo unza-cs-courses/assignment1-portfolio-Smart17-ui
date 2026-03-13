@@ -186,20 +186,28 @@ color:var(--color-border);
 }
 
 /* ================================
-HAMBURGER MENU
+HAMBURGER MENU FIXED FOR LIGHT MODE
 ================================ */
 
 #menu-toggle{
 display:none;
 }
 
+/* Hamburger icon */
 .mynav{
 display:none;
 cursor:pointer;
+font-size:28px; /* size of hamburger */
+color:var(--color-primary-dark); /* visible in light & dark mode */
+z-index:1100; /* above menu */
+}
+
+/* If hamburger is an SVG */
+.mynav svg{
+fill: var(--color-primary-dark); /* visible color */
 }
 
 /* MOBILE MENU */
-
 @media(max-width:768px){
 
 .mynav{
@@ -219,6 +227,8 @@ background:var(--color-background);
 width:200px;
 
 padding:20px;
+
+z-index:1000;
 
 }
 
@@ -543,4 +553,23 @@ grid-template-columns:repeat(3,1fr);
 
 }
 
+}
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .header, .nav, .mynav, .projects__grid, .footer, .theme-toggle {
+    display: none; /* hide navigation and buttons */
+  }
+
+  .container {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .about, .contact, .hero {
+    page-break-inside: avoid;
+  }
 }

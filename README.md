@@ -127,9 +127,12 @@ Before submitting, verify:
 
 ## Your Information
 
-**Name:** [Your Name]
-**Student ID:** [Your Student ID]
+**Name:** Smart Mbuzi
+**Student ID:** 2022020324
 **Design Theme:** [Describe your portfolio theme/style]
+My portfolio follows a modern, professional, and clean design theme. I use a dark background and warm accent colors (--color-primary and --color-background-alt) to create contrast and highlight key elements. The layout is mobile-first, responsive, and uses flexbox and grid to organize content efficiently.
+Typography is simple and readable, using a sans-serif font with consistent font sizes for headings, body text, and buttons. Interactive elements like buttons, hover effects, nd the ark/light mode toggle have transitions to make interface smooth and user-friendly.
+Overall, the theme aims for a professional, approachable, and visually balanced look, emphasing both functionality and aesthitics while keeping the portfolio easy to navigate
 
 ### CSS Techniques Used
 - [ ] CSS Custom Properties
@@ -140,7 +143,12 @@ Before submitting, verify:
 
 ### Challenges & Solutions
 [Describe any challenges you faced and how you solved them]
-
+In this assignment i was faced with several challenges, especilly for the bonus challenges
+1. i had challenges creating the toggle button and making it to actually, i spent the longest period of time working on the dark/light menu feature
+To solve this problem, i experimented with CSS variables for colors and used some small javascript to handle the switching
+2. The other challenge which i faced was creating the humburger menu, managing the spaces as well as making the humburger menu to actually work
+To solve this problem I combined CSS Flexbox techniques with a little javascript to toggle the menu display on mobile. This approach allowed me to maintain a clean, responsive design.
+3. I also struggled initially with how to target elements with multiple classes in CSS. For example, understanding the difference between .class1.class2 (elements with both classes) versus .class1 .class2 (elements with class2 inside class1) was confusing at first. I solved this by reviewing CSS specificity rules and testing selectors in the browser developer tools until I got the desired result.
 ### Credits
 [List any images, fonts, or resources used with attribution]
 
